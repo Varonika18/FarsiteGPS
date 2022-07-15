@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LandingPage">
+
+    <Toolbar
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/compass"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="FarsiteGPS"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/outline_menu_black_36"
+            />
+        </LinearLayout>
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To FarsiteGPS"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Now you can take picture of an object from a distance with it's actual location date(GPS coordinates) and not the location data of your position."
+        android:textColor="@color/black"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:text="4 Easy steps"
+            android:textColor="@android:color/holo_green_dark"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="1. lock GPS of your position\n2. Lock direction from your position to the object\n3. Fix the distance from you to the object\n4. Capture the image"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:text="THAT'S ALL...... "
+            android:textColor="@android:color/black"
+            />
+
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_margin="50dp"
+            android:layout_gravity="center"
+            android:onClick="gotoNext"
+            android:text="GET STARTED"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

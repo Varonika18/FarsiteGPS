@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FarsiteGPS</string>
+    <string name="file_saved">file saved</string>
+    <string-array name="distance_unit">
+        <item>meter(s)</item>
+        <!-- <item>feet(s)</item>-->
+    </string-array>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "551545670728",
+    "project_id": "farsitegps-93894",
+    "storage_bucket": "farsitegps-93894.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551545670728:android:5b1881e18bcd272a7c9c7d",
+        "android_client_info": {
+          "package_name": "com.latlongbearing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551545670728-0gqimjta68ged00mmd561q9t0cgpj6vg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCQiYYw30veGhBN2Lt7HS-zcmqHhPCipY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551545670728-0gqimjta68ged00mmd561q9t0cgpj6vg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

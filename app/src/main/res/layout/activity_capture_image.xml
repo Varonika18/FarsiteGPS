@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LandingPage">
+
+    <Toolbar
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/compass"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text="FarsiteGPS"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/outline_menu_black_36"
+                />
+        </LinearLayout>
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Please lock/fix 'GPS', 'Direction' and 'Distance' without moving from your position and capturing the image from the same position."
+            android:textColor="@android:color/darker_gray"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text="GPS"
+                />
+
+
+            <ProgressBar
+                android:id="@+id/progress_circular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtGPSLocked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_weight="1"
+                android:text="LOCKED"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text="DIRECTION"
+                />
+
+            <TextView
+                android:id="@+id/txtDirectionSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_weight="1"
+                android:text="CLICK TO SET"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="DISTANCE"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/edit_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:hint="20"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/distance_unit"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:enabled="false"
+            android:background="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:onClick="gotoCameraActivity"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            />
+    </LinearLayout>
+
+</LinearLayout>

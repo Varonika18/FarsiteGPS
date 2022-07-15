@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TextureView
+        android:id="@+id/view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imgArrow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/twowayarrow"
+        app:tint="@color/white"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txtObjectSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top"
+        android:padding="10dp"
+        android:text="Object\nSide"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txtBearingAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center|top"
+        android:padding="10dp"
+        android:text="0"
+        android:alpha="0.5"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+
+        android:visibility="gone"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="?actionBarSize"
+        app:srcCompat="@drawable/compass_new"
+        android:alpha="0.6"
+
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imgZoom"
+        android:layout_width="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/view_finder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        android:src="@drawable/zoom"
+        tools:ignore="MissingConstraints" />
+
+    <com.latlongbearing.VerticalSeekBar
+        android:visibility="gone"
+        android:id="@+id/seekBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/view_finder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imgBrightness"
+        android:layout_width="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/brightness"
+        tools:ignore="MissingConstraints" />
+
+    <com.latlongbearing.VerticalSeekBar
+        android:visibility="gone"
+        android:id="@+id/seekBar1"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txtHint"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="?actionBarSize"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:text=" Please hold your mobile screen parallel to the ground and at your eye level. Position the mobile properly so that the arrow will be in a line between you and the object."
+
+        />
+
+
+
+
+    <!--<ImageView
+
+        android:id="@+id/imageLine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/overlay"
+
+
+        />-->
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/zoom_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgCapture"
+        app:srcCompat="@android:drawable/btn_plus"
+        />
+
+
+
+    <ImageView
+
+        android:visibility="gone"
+        android:id="@+id/zoom_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgCapture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_minus"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imgCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:srcCompat="@drawable/outline_camera_white_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txtYourSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:text="Your Side"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+
+        android:id="@+id/btnLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="LOCK"
+        app:srcCompat="@drawable/outline_camera_white_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
