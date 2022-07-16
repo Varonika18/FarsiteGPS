@@ -1,4 +1,4 @@
-package com.latlongbearing;
+/*package com.latlongbearing;
 
 import android.Manifest;
 import android.content.Context;
@@ -22,4 +22,4 @@ public class Utils {
             return readExtStorage== PackageManager.PERMISSION_GRANTED;
         }
     }
-}
+}*/

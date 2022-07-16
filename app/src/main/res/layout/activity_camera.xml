@@ -14,6 +14,7 @@
 
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,20 +22,20 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnCam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCam"
-            android:textSize="15sp"
-            android:text="Take Photo"/>
+            android:text="Take Photo"
+            android:textSize="15sp" />
 
         <Button
-            android:visibility="gone"
+            android:id="@+id/btnSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSwitch"
             android:layout_marginLeft="0dp"
+            android:text="Switch Camera"
             android:textSize="15sp"
-            android:text="Switch Camera"/>
+            android:visibility="gone" />
 
     </LinearLayout>
 
